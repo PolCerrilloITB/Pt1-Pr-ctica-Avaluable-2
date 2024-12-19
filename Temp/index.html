@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rellotge Temporitzador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>⏰ Rellotge Temporitzador</h1>
+        
+        <!-- Hora Actual -->
+        <div class="digital-clock" id="hora-actual">00:00:00</div>
+
+        <!-- Configuració del Temporitzador -->
+        <div>
+            <h2>Configura el Temporitzador</h2>
+            <label for="horaFinal">Hora Exacta:</label>
+            <input type="time" id="horaFinal">
+            
+            <label for="durada">Durada:</label>
+            <input type="text" id="durada" placeholder="hh:mm:ss">
+            
+            <div>
+                <button onclick="iniciarTemporitzador()">Iniciar</button>
+                <button onclick="reiniciarTemporitzador()">Reiniciar</button>
+                <button onclick="detenerSonido()">Detener Sonido</button>
+
+            </div>
+        </div>
+
+        <!-- Temps Restant -->
+        <div class="timer" id="temps-restant">00:00:00</div>
+
+        <!-- Configuració de So -->
+        <div>
+            <label for="so">Configuració de So:</label>
+            <select id="so">
+                <option value="sound1">Beep 1</option>
+                <option value="sound2">Beep 2</option>
+                <option value="sound3">Beep 3</option>
+            </select>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

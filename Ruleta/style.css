@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+}
+
+h1 {
+    color: #444;
+}
+
+button {
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button:hover:enabled {
+    background-color: #D00000;
+}
+
+#contiene {
+    margin: 20px auto;
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+canvas {
+    border: 2px solid #444;
+    border-radius: 50%;
+}
+
+#arrow {
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 20px solid black;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+#Seleccionar-nom {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
